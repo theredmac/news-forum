@@ -32,8 +32,12 @@ function SearchBar({
         <option value="technology">Technology</option>
       </select>
       <select onChange={(e) => onCountryChange(e.target.value)} value={selectedCountry}>
+        <option value="au">Australia</option>
+        <option value="be">Belgium</option>
         <option value="ca">Canada</option>
+        <option value="fr">France</option>
         <option value="in">India</option>
+        <option value="il">Israel</option>
         <option value="gb">United Kingdom</option>
         <option value="us">United States</option>
         
