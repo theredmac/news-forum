@@ -57,12 +57,14 @@ ii. Install project dependencies for both the front-end and back-end:
       cd my-backend
       
       npm install
+
       
 iii. Run the back-end server:
 
     cd my-backend
     
     node index.js
+
     
 iv. Run the front-end:
 
