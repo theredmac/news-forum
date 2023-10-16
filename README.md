@@ -28,16 +28,21 @@ News Forum offers a newsletter subscription service. Users can subscribe to the 
 
 # Tech-stack
 -React: The front-end of the application is built with React, providing a dynamic user interface.
+
 -Express.js: The back-end server is developed using Express.js, handling API requests and database operations.
+
 -SQLite: SQLite is used as the database for storing newsletter subscriptions.
+
 -Axios: Axios is used for making API requests to fetch real-time news data.
+
 -News API: The application uses the News API to fetch real-time news data.
+
 
 # Getting Started
 To run News Forum on your local machine, follow these steps:
 i. Clone this repository to your local machine.
 
-git clone <repository-url>
+    git clone <repository-url>
 
 ii. Install project dependencies for both the front-end and back-end:
 
@@ -54,9 +59,15 @@ ii. Install project dependencies for both the front-end and back-end:
       npm install
       
 iii. Run the back-end server:
+
     cd my-backend
+    
     node index.js
+    
 iv. Run the front-end:
+
     cd news-forum
+    
     npm start
+    
 The application will be accessible at http://localhost:3000 in the web browser.
