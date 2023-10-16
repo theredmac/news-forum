@@ -36,15 +36,23 @@ News Forum offers a newsletter subscription service. Users can subscribe to the 
 # Getting Started
 To run News Forum on your local machine, follow these steps:
 i. Clone this repository to your local machine.
+
 git clone <repository-url>
 
 ii. Install project dependencies for both the front-end and back-end:
+
     For the React front-end:
+    
       cd news-forum
+      
       npm install
+      
     For the Express.js back-end:
+    
       cd my-backend
+      
       npm install
+      
 iii. Run the back-end server:
     cd my-backend
     node index.js
