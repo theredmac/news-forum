@@ -1,0 +1,116 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+/* NewsFeed.css */
+
+.news-feed {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-feed h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* NewsEntity.css */
+
+.news-entity {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-entity h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.news-entity p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.news-entity img {
+  max-width: 100%;
+  height: auto;
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* SearchBar.css */
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Remove default input focus outline */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; /* Add spacing between input and button */
+}
+
+/* Style the button on hover */
+.search-bar button:hover {
+  background-color: #0056b3; /* Darker shade of the primary color */
+}
+
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 768px) {
+  .App {
+    margin: 10px;
+  }
+
+  .news-feed {
+    padding: 10px;
+  }
+}
