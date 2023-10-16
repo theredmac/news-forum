@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import NewsFeed from './components/NewsFeed';
 import SearchBar from './components/SearchBar';
+import NewsletterSubscription from './components/NewsLetterSubscription'; // Adjust the path as needed
+import Footer from './components/Footer'; // Import the Footer component
+
 import { fetchNews } from './components/NewsService';
 
 function App() {
@@ -61,7 +64,9 @@ function App() {
         selectedCategory={selectedCategory}
         selectedCountry={selectedCountry}
       />
+     
       <NewsFeed newsData={filteredNews.length > 0 ? filteredNews : newsData} />
+      <Footer />
     </div>
   );
 }
