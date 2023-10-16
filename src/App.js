@@ -8,20 +8,21 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [newsData, setNewsData] = useState([]);
   const [filteredNews, setFilteredNews] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(''); // Initialize with an empty string
+  const [selectedCountry, setSelectedCountry] = useState('us'); // Initialize with the default country
 
   // Fetch news data when the component mounts
   useEffect(() => {
     const getNews = async () => {
       try {
-        const newsData = await fetchNews();
-        console.log('newsData:', newsData);
+        const newsData = await fetchNews(selectedCountry, selectedCategory);
         setNewsData(newsData);
       } catch (error) {
         console.error('Error fetching news:', error);
       }
     };
     getNews();
-  }, []);
+  }, [selectedCountry, selectedCategory]); // Fetch news data whenever country or category changes
 
   // Function to handle the search
   const handleSearch = () => {
@@ -38,6 +39,16 @@ function App() {
     }
   };
 
+  // Function to handle category change
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  // Function to handle country change
+  const handleCountryChange = (country) => {
+    setSelectedCountry(country);
+  };
+
   return (
     <div className="App">
       <h1>News Forum</h1>
@@ -45,6 +56,10 @@ function App() {
         searchTerm={searchTerm}
         onSearch={handleSearch}
         setSearchTerm={setSearchTerm}
+        onCategoryChange={handleCategoryChange}
+        onCountryChange={handleCountryChange}
+        selectedCategory={selectedCategory}
+        selectedCountry={selectedCountry}
       />
       <NewsFeed newsData={filteredNews.length > 0 ? filteredNews : newsData} />
     </div>
