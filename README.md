@@ -14,19 +14,14 @@ Each news entity in the feed includes the following features:
   -Video Playback: Optional video playback if provided by the news source.
   
 -> Real-time News Feed
-
 News Forum provides a real-time news feed that conveys a sense of freshness. The feed is updated periodically to ensure users have access to the latest news.
 
 -> Filtering Options
-
 Users can filter news by:
-
   -Geographic Location: Choose from a list of supported countries (e.g., United States, United Kingdom, etc.).
-  
   -Topics: Select from various news categories such as Sports, Politics, Technology, Finance, and more.
   
 -> Newsletter Subscription Service
-
 News Forum offers a newsletter subscription service. Users can subscribe to the newsletter using their email address. Features include:
   -Subscription: Users can subscribe to the newsletter to receive news updates.
   -Unsubscription: Users can unsubscribe from the newsletter if they wish to stop receiving updates.
